@@ -1,1 +1,1 @@
-# tyche
+# MBA deadline site
