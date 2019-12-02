@@ -29,25 +29,34 @@
       // and the element must have CSS styling to give it width and height
       // optionally, a third argument with configuration options can be passed.
       // See below for more about options.
-      var deadlines = {
-        events: [
-          {
-            media: {
-              url: 'https://identity.stanford.edu/img/all-marks-wide.png',
-              caption: 'Stanford'
-            },
-            start_date: {
-              month: '09',
-              day: '10',
-              year: '2019'
-            },
-            text: {
-              headline: 'Stanford',
-              text: 'Stanford is a world renown institution'
-            }
-          }
-        ]
-      };
+      const fs = require('fs');
+
+      fs.readFile('deadlines.json', (err, deadlines) => {
+        if (err) throw err;
+
+        console.log(deadlines.toString());
+      });
+
+      // var deadlines = {
+      //   events: [
+      //     {
+      //       media: {
+      //         url: 'https://identity.stanford.edu/img/all-marks-wide.png',
+      //         caption: 'Stanford'
+      //       },
+      //       start_date: {
+      //         month: '09',
+      //         day: '10',
+      //         year: '2019'
+      //       },
+      //       text: {
+      //         headline: 'Stanford',
+      //         text: 'Stanford is a world renown institution'
+      //       }
+      //     }
+      //   ]
+      // };
+
       timeline = new TL.Timeline(
         'timeline-embed',
         // 'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml'

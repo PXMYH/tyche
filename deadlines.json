@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "media": {
+        "url": "https://identity.stanford.edu/img/all-marks-wide.png",
+        "caption": "null_caption"
+      },
+      "start_date": {
+        "month": 8,
+        "day": 2,
+        "year": 2019
+      },
+      "text": {
+        "headline": "Yale SOM",
+        "text": "Yale SOM"
+      }
+    }
+  ]
+}
