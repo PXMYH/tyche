@@ -1,0 +1,29 @@
+{
+  "name": "tyche",
+  "version": "1.0.0",
+  "description": "display mba deadlines from various top schools",
+  "main": "index.js",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PXMYH/tyche.git"
+  },
+  "keywords": [
+    "mba",
+    "nodejs",
+    "scrape",
+    "notification"
+  ],
+  "author": "Michael H.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PXMYH/tyche/issues"
+  },
+  "homepage": "https://github.com/PXMYH/tyche#readme"
+}
