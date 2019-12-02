@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const express = require('express');
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -12,7 +13,7 @@ const puppeteer = require('puppeteer');
 
   var deadlines = {};
   var dates = [];
-  console.log(`data: ${data}`);
+  // console.log(`data: ${data}`);
 
   segment_number = 9;
   school_name = 'null';
@@ -29,3 +30,14 @@ const puppeteer = require('puppeteer');
 
   await browser.close();
 })();
+
+var app = express();
+
+app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+var server = app.listen(3000, () => {
+  console.log('server started up, listening on port 3000');
+});

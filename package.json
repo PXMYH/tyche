@@ -4,10 +4,15 @@
   "description": "display mba deadlines from various top schools",
   "main": "index.js",
   "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
     "puppeteer": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
