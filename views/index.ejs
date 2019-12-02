@@ -29,29 +29,30 @@
       // and the element must have CSS styling to give it width and height
       // optionally, a third argument with configuration options can be passed.
       // See below for more about options.
-
+      var deadlines = {
+        events: [
+          {
+            media: {
+              url: 'https://identity.stanford.edu/img/all-marks-wide.png',
+              caption: 'Stanford'
+            },
+            start_date: {
+              month: '09',
+              day: '10',
+              year: '2019'
+            },
+            text: {
+              headline: 'Stanford',
+              text: 'Stanford is a world renown institution'
+            }
+          }
+        ]
+      };
       timeline = new TL.Timeline(
         'timeline-embed',
-        'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml'
+        // 'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml'
+        deadlines
       );
     </script>
   </body>
-
-  <!-- <body>
-    <div class="container">
-      <fieldset>
-        <form action="/" method="post">
-          <input
-            name="city"
-            type="text"
-            class="ghost-input"
-            placeholder="Enter a City"
-            required
-          />
-          <input type="submit" class="ghost-button" value="Get Weather" />
-        </form>
-      </fieldset>
-    </div>
-  </body>
-</html> -->
 </html>
